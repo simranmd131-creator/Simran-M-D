@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Simran 💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Floating particles canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- ========== PAGE 1: THE BEGINNING ========== -->
+  <section class="page active" id="page1">
+    <div class="bg-overlay page1-bg"></div>
+    <div class="stars-layer" id="starsLayer"></div>
+    <div class="page-content">
+      <div class="text-sequence" id="seq1">
+        <p class="line fade-line" data-delay="0">Hey Simran… ❤️</p>
+        <p class="line fade-line" data-delay="2000">Maybe this is a little unexpected…</p>
+        <p class="line fade-line" data-delay="4200">But I need to ask you something…</p>
+        <h1 class="main-question fade-line" data-delay="6800">Will you be mine forever?</h1>
+
+        <div class="btn-group fade-line" data-delay="8500">
+          <button class="btn btn-yes" id="yesBtn1">YES 💖</button>
+          <button class="btn btn-no" id="noBtn1">NO 😢</button>
+        </div>
+
+        <div class="no-messages" id="noMsg1">
+          <p class="no-line"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PAGE 2: THE PROMISES ========== -->
+  <section class="page" id="page2">
+    <div class="bg-overlay page2-bg"></div>
+    <div class="page-content">
+      <div class="text-sequence scroll-lines" id="seq2">
+        <p class="line" style="font-style:italic; font-size:2rem;">Simran…</p>
+        <p class="line">I will stay with you on your worst days…</p>
+        <p class="line">I will handle every mood of yours with patience and love.</p>
+        <p class="line">I will cook for you when you're not okay…</p>
+        <p class="line">I will sit beside you even in silence…</p>
+        <p class="line glow-text">I am the luckiest person to have you in my life.</p>
+
+        <h2 class="main-question">Do you accept all of this… Simran?</h2>
+
+        <div class="btn-group">
+          <button class="btn btn-yes" id="yesBtn2">YES 💖</button>
+          <button class="btn btn-no" id="noBtn2">NO 😢</button>
+        </div>
+
+        <div class="no-messages" id="noMsg2">
+          <p class="no-line"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PAGE 3: THE CONFESSION ========== -->
+<section class="page" id="page3">
+  <div class="bg-overlay page3-bg"></div>
+  <div class="shooting-stars" id="shootingStars"></div>
+
+  <div class="page-content">
+    <div class="text-sequence scroll-lines" id="seq3">
+
+      <p class="line" style="font-style:italic; font-size:2rem;">Simran…</p>
+      <p class="line">You are the woman I dreamed of…</p>
+      <p class="line">The one I always wanted to call mine.</p>
+      <p class="line">In my life… I would do anything for my queen.</p>
+      <p class="line">I think about you in ways I can't even explain…</p>
+      <p class="line">And somehow… you became my everything.</p>
+      <p class="line glow-text">Every heartbeat of mine whispers your name… Simran.</p>
+
+      <h1 class="final-confession">I choose you. Always.</h1>
+
+      <div class="btn-group">
+        <button class="btn btn-continue" id="continueBtn3">Continue ❤️</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <!-- ========== PAGE 4: THE PROPOSAL ========== -->
+  <section class="page" id="page4">
+  <div class="bg-overlay page4-bg"></div>
+
+  <div class="page-content">
+    <div class="text-sequence" id="seq4">
+
+      <p class="line fade-line" data-delay="0">Simran…</p>
+
+      <h1 class="main-question fade-line" data-delay="1500">
+        Will you marry me?
+      </h1>
+
+      <p class="line subtext fade-line" data-delay="3000">
+        I will hold your hand until death separates us.
+      </p>
+
+      <div class="ring-animation fade-line" data-delay="4500">💍</div>
+
+      <div class="btn-group fade-line" data-delay="6000">
+        <button class="btn btn-yes btn-big" id="yesBtn4">YES 💍</button>
+        <button class="btn btn-no" id="noBtn4">NO 😢</button>
+      </div>
+
+      <div class="no-messages" id="noMsg4">
+        <p class="no-line"></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ========== FINAL SCREEN ========== -->
+  <section class="page" id="pageFinal">
+    <div class="bg-overlay final-bg"></div>
+    <div class="hearts-explosion"></div>
+    <div class="page-content">
+      <div class="final-message">
+        <div class="big-heart">💖</div>
+        <h1>You just made me the happiest person alive 💖</h1>
+        <p>Our forever begins now… Simran.</p>
+        <div class="forever-badge">∞ Always & Forever ∞</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AUDIO (FIXED) ========== -->
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="voice1" src="voice1.mp3" preload="auto"></audio>
+  <audio id="voice2" src="voice2.mp3" preload="auto"></audio>
+  <audio id="voice3" src="voice3.mp3" preload="auto"></audio>
+  <audio id="voice4" src="voice4.mp3" preload="auto"></audio>
+
+  <!-- Music toggle -->
+  <button class="music-btn" id="musicBtn">♪</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
